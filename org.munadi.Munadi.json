@@ -23,8 +23,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/munadi/munadi.git",
-                    "tag": "19.11",
-                    "commit": "4d5b6064f5112cb6c1e473ce06b01b289dfbb824"
+                    "tag": "19.12",
+                    "commit": "3170e77c39819f1b8ed614246713fdfc1e2af8b9"
                 }
             ]
         }
