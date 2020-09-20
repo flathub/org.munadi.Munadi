@@ -1,7 +1,7 @@
 {
     "app-id": "org.munadi.Munadi",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.14",
+    "runtime-version": "5.15",
     "sdk": "org.kde.Sdk",
     "command": "munadi",
     "finish-args": [
@@ -23,8 +23,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/munadi/munadi.git",
-                    "tag": "20.07",
-                    "commit": "9f441cc6062949f4ebbbb52f94aaabe499849e08"
+                    "tag": "20.09",
+                    "commit": "42296806ca2211c8c8aca19aa5beab96771dc3f5"
                 }
             ]
         }
