@@ -16,17 +16,17 @@
     "modules": [
         {
             "name": "munadi",
-            "subdir": "src",
-            "buildsystem": "qmake",
-            "config-opts": ["CONFIG+=flatpak"],
+            "buildsystem": "cmake-ninja",
+            "config-opts": ["-DCMAKE_BUILD_TYPE=Release"],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://gitlab.com/munadi/munadi.git",
-                    "tag": "20.09",
-                    "commit": "42296806ca2211c8c8aca19aa5beab96771dc3f5"
+                    "tag": "20.09.1",
+                    "commit": "9aded80222f12856cd938f539f49e7a8bbfcaf1c"
                 }
             ]
         }
     ]
 }
+
