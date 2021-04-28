@@ -22,8 +22,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/munadi/munadi.git",
-                    "tag": "21.04",
-                    "commit": "7f754064d6a3cc46bd0d13c3d9296cb743a10dee"
+                    "tag": "21.04.1",
+                    "commit": "b7e825ea81f7bda44551991e3b71d8a37e8c0c7e"
                 }
             ]
         }
