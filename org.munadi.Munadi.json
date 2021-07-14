@@ -11,7 +11,8 @@
         "--socket=wayland",
         "--share=network",
         "--socket=pulseaudio",
-        "--talk-name=org.freedesktop.Notifications"
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "modules": [
         {
