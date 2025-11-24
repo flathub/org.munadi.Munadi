@@ -6,6 +6,7 @@
     "command": "munadi",
     "finish-args": [
         "--device=dri",
+        "--share=ipc",
         "--share=network",
         "--socket=wayland",
         "--socket=pulseaudio",
