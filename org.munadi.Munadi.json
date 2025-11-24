@@ -9,7 +9,6 @@
         "--share=network",
         "--socket=wayland",
         "--socket=pulseaudio",
-        "--socket=system-bus",
         "--socket=fallback-x11",
         "--socket=inherit-wayland-socket",
         "--talk-name=org.freedesktop.Notifications",
