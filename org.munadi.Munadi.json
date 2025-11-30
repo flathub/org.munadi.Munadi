@@ -24,9 +24,9 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://gitlab.com/hasanesa/munadi.git",
-                    "tag": "25.11-flatpak",
-                    "commit": "80cfe83525b2e084546ddfd9ce74e6f75e4477cf"
+                    "url": "https://gitlab.com/munadi/munadi.git",
+                    "tag": "25.11",
+                    "commit": "651126c7f4ad3777d732248c64701e8d181ea154"
                 }
             ]
         }
