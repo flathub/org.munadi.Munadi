@@ -30,6 +30,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/munadi/munadi.git",
+                    "tag": "26.02",
                     "commit": "52337647c7c1af3faa451c4d0a5dd779c0cf3ba0"
                 }
             ]
