@@ -6,10 +6,10 @@ command: munadi
 finish-args:
   - --device=dri
   - --filesystem=xdg-music:ro
+  - --filesystem=xdg-run/pipewire-0
   - --share=ipc
   - --share=network
   - --socket=wayland
-  - --socket=pulseaudio
   - --socket=fallback-x11
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
