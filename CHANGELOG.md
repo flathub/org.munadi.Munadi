@@ -8,7 +8,7 @@ All notable changes to this repo will be documented in this file. Does not inclu
 
 - Update manifest for 26.04 release
 
-Full Changelog: [26.02...26.04](https://gitlab.com/munadi/munadi/-/compare/9f592c1...a31d215)
+Full Changelog: [26.02...26.04](https://github.com/munadi/munadi/-/compare/9f592c1...a31d215)
 
 ---
 
@@ -16,13 +16,13 @@ Full Changelog: [26.02...26.04](https://gitlab.com/munadi/munadi/-/compare/9f592
 
 - Update manifest for 26.02 release
 
-Full Changelog: [25.11...26.02](https://gitlab.com/munadi/munadi/-/compare/50dfa95...9f592c1)
+Full Changelog: [25.11...26.02](https://github.com/munadi/munadi/-/compare/50dfa95...9f592c1)
 
 ## [25.11](#munadi-2511) - 2025-11-26
 
 - Update manifest for 25.11 release
 
-Full Changelog: [22.04...25.11](https://gitlab.com/munadi/munadi/-/compare/688ff65...50dfa95)
+Full Changelog: [22.04...25.11](https://github.com/munadi/munadi/-/compare/688ff65...50dfa95)
 
 ---
 ## Get in Touch
