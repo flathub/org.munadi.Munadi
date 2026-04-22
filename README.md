@@ -144,13 +144,23 @@ If issues persist, [open an issue on project home](https://gitlab.com/munadi/mun
   ```
 > [!NOTE]
 > Make sure your manifest uses the [latest tagged commit of the project](https://gitlab.com/munadi/munadi/-/tags) as the source. Do not use other commits as those are not guaranteed to be stable.
+
+- Then your AppStream metainfo:
+  ```bash
+  flatpak run --command=flatpak-builder-lint org.flatpak.Builder metainfo /path/to/your.metainfo.xml
+  ```
+
 - Then test build and install [following the recommended workflow](#building-from-source). Replace with your manifest.
+
 - Additionally, check your repo after building
   ```bash
   flatpak run --command=flatpak-builder-lint repo repo
   ```
+
 - Update `CHANGELOG.md` with notable changes.
+
 - Maintain versioning scheme where relevant
+
 - [Submit a pull request](https://github.com/flathub/org.munadi.Munadi/pull/new) to master branch
 
 ## Contributing (Project)
