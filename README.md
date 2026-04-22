@@ -169,7 +169,7 @@ If issues persist, [open an issue on project home](https://gitlab.com/munadi/mun
 
 ## AI Contribution Policy
 
-We try to be as clear as possible on AI agent, LLM and bot contributions to the project. AI-assisted contributions by humans are welcome, any other autonomous AI contributions including merge/pull requests, issues & comments will be rejected. This includes any variants of "Signed-off by `<agent's operator>`" i.e. human-operated agentic requests. We encourage both seasoned and new-comer (human) contributors to include `"Assisted by: "` footer whenever presenting any contributions on the project if using any assistances by AIs & LLMs.
+We try to be as clear as possible on AI agent, LLM and bot contributions to the project. AI-assisted contributions by humans are welcome, any other autonomous AI contributions including merge/pull requests, issues & comments will be rejected. This includes any variants of `"Signed-off by <agent's operator>`" i.e. human-operated agentic requests. We encourage both seasoned and new-comer (human) contributors to include `"Assisted by: "` footer whenever presenting any contributions on the project if using any assistances by AIs & LLMs.
 
 ---
 
