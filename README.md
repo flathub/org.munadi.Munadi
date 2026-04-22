@@ -151,7 +151,7 @@ If issues persist, [open an issue on project home](https://gitlab.com/munadi/mun
   ```
 - Update `CHANGELOG.md` with notable changes.
 - Maintain versioning scheme where relevant
-- Submit a pull request to master branch
+- [Submit a pull request](https://github.com/flathub/org.munadi.Munadi/pull/new) to master branch
 
 ## Contributing (Project)
 
