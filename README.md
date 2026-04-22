@@ -14,15 +14,15 @@ Munadi is a lightweight, privacy-focused prayer time application for Linux and A
 
 | ![Main Page - Fajr](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/01_main_page_fajr.png) | ![Main Page - Dhuhr](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/02_main_page_dhuhr.png) | ![Main Page - Asr](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/03_main_page_asr.png) | ![Main Page - Maghrib](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/04_main_page_maghrib.png) | ![Main Page - Isha](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/05_main_page_isha.png) |
 |:--:|:--:|:--:|:--:|:--:|
-| Fajr Prayer Time | Dhuhr Prayer Time | Asr Prayer Time | Maghrib Prayer Time | Isha Prayer Time |
+| Fajr | Dhuhr | Asr | Maghrib | Isha |
 
 | ![Material Light Theme](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/06_main_page_material_light.png) | ![Material Dark Theme](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/07_main_page_material_dark.png) | ![Location Search](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/08_location_search.png) | ![Settings Page 1](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2511/06_settings_page.png) | ![Settings Page 2](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2511/07_settings_page.png) | ![Settings Page 3](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2511/08_settings_page.png) |
 |:--:|:--:|:--:|:--:|:--:|:--:|
-| Material Light Theme | Material Dark Theme | Location Search | Prayer Times Settings | General Settings | Appearance Settings |
+| Material Light | Material Dark | Location Search | Prayer Times Settings | General Settings | Appearance Settings |
 
 | ![Tray Menu](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2511/10_tray_menu.png) | ![Tray Tooltip](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2511/11_tray_menu.png) |
 |:--:|:--:|
-| System Tray Menu | Tooltip Display |
+| Tray Menu | Tooltip |
 
 </div>
 
@@ -31,35 +31,15 @@ Munadi is a lightweight, privacy-focused prayer time application for Linux and A
 > [!NOTE]
 > This repository holds only the flathub manifest and flatpak related contents. For full project details, go to [project home](https://gitlab.com/munadi/munadi).
 
-## Download
+---
 
-### Primary Release
+## Status (Flatpak)
 
-[![Latest Release](https://gitlab.com/munadi/munadi/-/badges/release.svg)](https://gitlab.com/munadi/munadi/-/releases)
+[![Build pipeline](https://github.com/flathub-infra/vorarbeiter/actions/workflows/build.yml/badge.svg)](https://github.com/flathub-infra/vorarbeiter/actions/workflows/build.yml)
 
-**Munadi Self-Extracting Installer**
-
-(No dependencies required - just run & install)
-
-```bash
-$ curl -JLO https://munadi.org/get/26.04 && sh Munadi-26.04.run -q
-```
-
-Alternatively:
-
-```bash
-$ curl -JLO https://munadi.org/get/26.04
-$ sh ./Munadi-26.04.run
-```
-
-and follow instructions.
-
-### Other Sources
-<div align="center">
-  <a href='https://flathub.org/apps/details/org.munadi.Munadi'>
-    <img height='64' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/>
-  </a>
-</div>
+Supported Architectures:
+  - x86_64
+  - aarch64
 
 ---
 
@@ -76,6 +56,38 @@ and follow instructions.
 
 ---
 
+## Installing
+
+### Flatpak
+<div align="center">
+  <a href='https://flathub.org/apps/details/org.munadi.Munadi'>
+    <img height='128' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/>
+  </a>
+</div>
+
+### Primary Release
+
+**Munadi Self-Extracting Installer**
+
+[![Latest Release](https://gitlab.com/munadi/munadi/-/badges/release.svg)](https://gitlab.com/munadi/munadi/-/releases)
+
+No dependencies required - just download & install:
+
+```bash
+# Replace VER with the file's version, e.g. Munadi-26.04.run
+$ sh Munadi-<VER>.run -q
+```
+
+Alternatively:
+
+```bash
+$ sh ./Munadi-<VER>.run
+```
+
+and follow instructions.
+
+---
+
 ## Building from Source
 
 Clone the repo:
@@ -83,42 +95,6 @@ Clone the repo:
 ```bash
 git clone --recursive --depth 1 https://github.com/flathub/org.munadi.Munadi.git ./munadi_flathub && cd ./munadi_flathub
 ```
-
-### Prerequisites
-
-**Build tools:**
-- `ccache` (optional, for faster rebuilds)
-- `cmake >= 3.30`
-- `gcc-c++` or `clang++`
-- `nasm`
-- `ninja-build`
-- `tar`
-- `zstd`
-
-**Libs: `pkg-devel` or `pkg-dev`**
-
-> [!WARNING]
-> Qt versions older than 6.9 may not be compatible. Build with project's latest tracking Qt version before filing bugs.
-
-> [!NOTE]
-> Generic package names are provided. These may not match on all distributions. Search your distribution's package repository for accurate package names.
-
-- `qtbase`
-- `qtshadertools`
-- `qtdeclarative`
-- `qtmultimedia`
-- `qtpositioning`
-- `qtsvg`
-- `qtwayland`
-- `qtlocation`
-- `qtvirtualkeyboard`
-
-- `libglvnd-devel`
-- `libxkbcommon`
-- `libXrandr`
-- `openssl`
-- `pipewire`
-- `wayland`
 
 The recommended method is to use `org.flatpak.Builder`:
 ```bash
@@ -134,24 +110,10 @@ flatpak run --command=flathub-build org.flatpak.Builder --install org.munadi.Mun
 flatpak run org.munadi.Munadi
 ```
 ---
-## Build Guidelines
 
-### Versioning
+## Versioning
 
-Version format follows `YY.MM` convention (e.g., 26.04 for April 2026). Subsequent releases within same month follows `YY.MM.m` convention (e.g., 26.04.1 for another release on April 2026).
-
----
-
-## Platform Support
-
-| Platform | Architecture | Status | Packaging |
-|----------|--------------|--------|-----------|
-| Linux | x86_64 | Stable | makeself (primary), Flatpak |
-| Linux | aarch64 | Stable | Flatpak |
-| Android | arm64-v8a | Alpha | APK (build included) |
-
-> [!Note]
-> The self-extracting makeself installer is the recommended distribution method. Flatpak is available but being deprecated.
+Version format follows [upstream convention](https://gitlab.com/munadi/munadi/-/blob/master/README.md#versioning). Follow-up published changes on this repository add revision number to upstream version: `<upstream>-<revision>` (e.g. `22.04-1` after `22.04` while the project is at `22.04`).
 
 ---
 
@@ -159,7 +121,7 @@ Version format follows `YY.MM` convention (e.g., 26.04 for April 2026). Subseque
 
 First of all, see if the issue you're facing already exists on the issue board. If not, follow these workflow before reporting bugs:
 
-1. Run `flatpak update -y` and `flatpak update --appstream`
+1. Run `flatpak update --appstream` and `flatpak update -y`
 2. Remove old configs and caches:
 ```bash
 mv ~/.var/app/org.munadi.Munadi{,.bak}
@@ -170,22 +132,36 @@ flatpak run --command=munadi --env=QT_DEBUG_PLUGINS=1 org.munadi.Munadi > munadi
 ```
 and try reproducing the issues.
 
-If issues persist, [open an issue](https://gitlab.com/munadi/munadi/-/issues) with `munadi.log`. Explain as detail as possible with your current app version and relevant details.
+If issues persist, [open an issue on project home](https://gitlab.com/munadi/munadi/-/issues) with `munadi.log`. Explain as detail as possible with your current app version and relevant details.
 
 ---
 
-## Contributing (Manifest)
+## Contributing
 
 - Validate your manifest:
   ```bash
   flatpak run --command=flatpak-builder-lint org.flatpak.Builder manifest /path/to/your/manifest
   ```
-  > [!NOTE]
-  > Make sure your manifest uses latest tagged commit of the [project](https://gitlab.com/munadi/munadi/-/tags) as the source. Do not use latest commits of master/main or other branches.
-- Then test build and install [following the recommended workflow](#building-from-source)
+> [!NOTE]
+> Make sure your manifest uses the [latest tagged commit of the project](https://gitlab.com/munadi/munadi/-/tags) as the source. Do not use other commits as those are not guaranteed to be stable.
+
+- Then your AppStream metainfo:
+  ```bash
+  flatpak run --command=flatpak-builder-lint org.flatpak.Builder metainfo /path/to/your.metainfo.xml
+  ```
+
+- Then test build and install [following the recommended workflow](#building-from-source). Replace with your manifest.
+
+- Additionally, check your repo after building
+  ```bash
+  flatpak run --command=flatpak-builder-lint repo repo
+  ```
+
 - Update `CHANGELOG.md` with notable changes.
-- Maintain versioning scheme
-- Submit a pull request
+
+- Maintain versioning scheme where relevant
+
+- [Submit a pull request](https://github.com/flathub/org.munadi.Munadi/pull/new) to master branch
 
 ## Contributing (Project)
 
@@ -193,7 +169,7 @@ If issues persist, [open an issue](https://gitlab.com/munadi/munadi/-/issues) wi
 
 ## AI Contribution Policy
 
-We try to be as clear as possible on AI agents, LLMs and bots contributions to the project. AI-assisted contributions by humans are welcome, any other autonomous AI contributions including merge/pull requests, issues & comments will be rejected. This includes any variants of "Signed-off by `<agent's operator>`" i.e. human-operated agentic requests. We encourage (human) contributors to include "Assisted by: " footer whenever presenting any contributions on the project if using any assistances by AIs & LLMs.
+We try to be as clear as possible on AI agent, LLM and bot contributions to the project. AI-assisted contributions by humans are welcome, any other autonomous AI contributions including merge/pull requests, issues & comments will be rejected. This includes any variants of `"Signed-off by <agent's operator>`" i.e. human-operated agentic requests. We encourage both seasoned and new-comer (human) contributors to include `"Assisted by: "` footer whenever presenting any contributions on the project if using any assistances by AIs & LLMs.
 
 ---
 
@@ -204,7 +180,7 @@ This project is licensed under the AGPL-3.0-or-later license. Licenses apply to 
 ---
 
 - **Homepage**: [munadi.org](https://munadi.org)
-- **Bug Tracker**: [GitLab Issues](https://gitlab.com/munadi/munadi/-/issues) | [Flatpak Issues](https://github.com/flathub/org.munadi.Munadi/issues)
+- **Bug Tracker**: [GitLab Issues](https://gitlab.com/munadi/munadi/-/issues) | [Flathub Issues](https://github.com/flathub/org.munadi.Munadi/issues)
 - **Source Code**: [Source](https://gitlab.com/munadi/munadi) | [Flathub](https://github.com/flathub/org.munadi.Munadi)
 
 ---
