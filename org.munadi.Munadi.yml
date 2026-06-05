@@ -25,7 +25,7 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
-    patches:
+    patch:
       - disable-fileman-cet.patch
     sources:
       - type: git
