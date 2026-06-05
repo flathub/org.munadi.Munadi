@@ -28,15 +28,15 @@ Munadi is a simple yet powerful Athan app designed to be a companion in your dai
 
 <div style="overflow-x: auto; white-space: nowrap;">
 
-| ![Main Page - Fajr](screenshots/2606/01_main_page_fajr.png) | ![Main Page - Sunrise](screenshots/2606/02_main_page_sunrise.png) | ![Main Page - Dhuhr](screenshots/2606/03_main_page_dhuhr.png) | ![Main Page - Asr](screenshots/2606/04_main_page_asr.png) | ![Main Page - Maghrib](screenshots/2606/05_main_page_maghrib.png) | ![Main Page - Isha](screenshots/2606/06_main_page_isha.png) |
+| ![Main Page - Fajr](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/01_main_page_fajr.png) | ![Main Page - Sunrise](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/02_main_page_sunrise.png) | ![Main Page - Dhuhr](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/03_main_page_dhuhr.png) | ![Main Page - Asr](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/04_main_page_asr.png) | ![Main Page - Maghrib](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/05_main_page_maghrib.png) | ![Main Page - Isha](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/06_main_page_isha.png) |
 |:--:|:--:|:--:|:--:|:--:|:--:|
 | Fajr | Sunrise | Dhuhr | Asr | Maghrib | Isha |
 
-| ![Material Light Theme](screenshots/2606/08_main_page_material_light.png) | ![Material Dark Theme](screenshots/2606/07_main_page_material_dark.png) | ![Settings Page - Light](screenshots/2606/09_settings_page_1.png) | ![Settings Page - Dark](screenshots/2606/10_settings_page_2.png) |
+| ![Material Light Theme](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/08_main_page_material_light.png) | ![Material Dark Theme](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/07_main_page_material_dark.png) | ![Settings Page - Light](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/09_settings_page_1.png) | ![Settings Page - Dark](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/10_settings_page_2.png) |
 |:--:|:--:|:--:|:--:|
 | Material Light | Material Dark | Settings Page (Dark) | Settings Page (Light) |
 
-| ![Tray Menu](screenshots/2606/11_tray_menu.png) | ![Tray Tooltip](screenshots/2606/12_tray_tooltip.png) |
+| ![Tray Menu](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/11_tray_menu.png) | ![Tray Tooltip](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2606/12_tray_tooltip.png) |
 |:--:|:--:|
 | Tray Menu | Tooltip |
 
