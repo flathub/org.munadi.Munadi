@@ -2,6 +2,13 @@
 
 All notable changes to this repo will be documented in this file. Does not include [project's changelog](https://gitlab.com/munadi/munadi/-/blob/master/CHANGELOG.md).
 
+## [26.06](#munadi-2606) - 2026-06-05
+
+- Update manifest for 26.06 release
+- Add some more removables during cleanup
+
+Full Changelog: [`26.04...26.06`](https://github.com/flathub/org.munadi.Munadi/compare/26.04...26.06)
+
 ---
 
 ## [26.04](#munadi-2604) — 2026-04-19

@@ -1,26 +1,42 @@
 # Munadi
 
-## Simple Athan App
+## Your Simple and Beautiful Athan App
 
-Munadi is a lightweight, privacy-focused prayer time application for Linux and Android. It provides accurate prayer times with customizable athan (call to prayer) options, dual calendar support (Hijri/Gregorian), and a clean modern interface.
+Munadi is a simple yet powerful Athan app designed to be a companion in your daily life. It offers a clean, beautiful interface free from advertisements and tracking, delivering precise prayer alerts for any city worldwide. The app includes dual calendar support (Gregorian & Hijri), multiple calculation methods, and the ability to view prayer schedules for any date - past or future. A range of thoughtful settings allows you to tailor the experience to your personal needs.
+
+**Features:**
+- Prayer times for nearly any city around the globe
+- Lightweight design with no advertisements or tracking
+- Countdown to the next prayer, visible in tooltips
+- View prayer times for past or future dates
+- Automatic switching between Dark and Light themes
+- Customizable UI visual effects
+- Dynamic wallpapers that reflect the time of prayer
+- Convenient system-tray support
+- Flexible time format options
+- Individual control to enable, mute, or adjust Athan volumes
+- Option to assign a unique Athan for each prayer
+- Fine-tune prayer times and Hijri date offsets
+- Support for various global calculation methods
+- Arabic language support
 
 ---
 
 ## Screenshots
 
-### Version 26.04
+### Version 26.06
 
 <div style="overflow-x: auto; white-space: nowrap;">
 
-| ![Main Page - Fajr](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/01_main_page_fajr.png) | ![Main Page - Dhuhr](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/02_main_page_dhuhr.png) | ![Main Page - Asr](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/03_main_page_asr.png) | ![Main Page - Maghrib](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/04_main_page_maghrib.png) | ![Main Page - Isha](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/05_main_page_isha.png) |
-|:--:|:--:|:--:|:--:|:--:|
-| Fajr | Dhuhr | Asr | Maghrib | Isha |
-
-| ![Material Light Theme](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/06_main_page_material_light.png) | ![Material Dark Theme](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/07_main_page_material_dark.png) | ![Location Search](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2604/08_location_search.png) | ![Settings Page 1](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2511/06_settings_page.png) | ![Settings Page 2](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2511/07_settings_page.png) | ![Settings Page 3](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2511/08_settings_page.png) |
+| ![Main Page - Fajr](screenshots/2606/01_main_page_fajr.png) | ![Main Page - Sunrise](screenshots/2606/02_main_page_sunrise.png) | ![Main Page - Dhuhr](screenshots/2606/03_main_page_dhuhr.png) | ![Main Page - Asr](screenshots/2606/04_main_page_asr.png) | ![Main Page - Maghrib](screenshots/2606/05_main_page_maghrib.png) | ![Main Page - Isha](screenshots/2606/06_main_page_isha.png) |
 |:--:|:--:|:--:|:--:|:--:|:--:|
-| Material Light | Material Dark | Location Search | Prayer Times Settings | General Settings | Appearance Settings |
+| Fajr | Sunrise | Dhuhr | Asr | Maghrib | Isha |
 
-| ![Tray Menu](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2511/10_tray_menu.png) | ![Tray Tooltip](https://gitlab.com/munadi/munadi/-/raw/master/screenshots/2511/11_tray_menu.png) |
+| ![Material Light Theme](screenshots/2606/08_main_page_material_light.png) | ![Material Dark Theme](screenshots/2606/07_main_page_material_dark.png) | ![Settings Page - Light](screenshots/2606/09_settings_page_1.png) | ![Settings Page - Dark](screenshots/2606/10_settings_page_2.png) |
+|:--:|:--:|:--:|:--:|
+| Material Light | Material Dark | Settings Page (Dark) | Settings Page (Light) |
+
+| ![Tray Menu](screenshots/2606/11_tray_menu.png) | ![Tray Tooltip](screenshots/2606/12_tray_tooltip.png) |
 |:--:|:--:|
 | Tray Menu | Tooltip |
 
@@ -43,19 +59,6 @@ Supported Architectures:
 
 ---
 
-## Features
-
-- Prayer times for cities worldwide with multiple calculation methods
-- Hijri and Gregorian calendar display
-- Customizable athan files and individual prayer volume control
-- System tray integration with window show/hide functionality
-- Time-left countdown to next prayer
-- Time-of-day themed wallpapers
-- Dark and light theme support
-- RTL language support (including Arabic)
-
----
-
 ## Installing
 
 ### Flatpak
@@ -74,7 +77,7 @@ Supported Architectures:
 No dependencies required - just download & install:
 
 ```bash
-# Replace VER with the file's version, e.g. Munadi-26.04.run
+# Replace VER with the file's version, e.g. Munadi-26.06.run
 $ sh Munadi-<VER>.run -q
 ```
 
@@ -128,11 +131,11 @@ mv ~/.var/app/org.munadi.Munadi{,.bak}
 ```
 3. Run from terminal:
 ```bash
-flatpak run --command=munadi --env=QT_DEBUG_PLUGINS=1 org.munadi.Munadi > munadi-log.txt 2>&1
+flatpak run --command=munadi --env=QT_LOGGING_RULES='*.debug=true;qt.*.debug=false;kf.*.debug=false;qt.qml.import=true' org.munadi.Munadi > munadi-log.txt 2>&1
 ```
 and try reproducing the issues.
 
-If issues persist, [open an issue on project home](https://gitlab.com/munadi/munadi/-/issues) with `munadi.log`. Explain as detail as possible with your current app version and relevant details.
+If issues persist, [open an issue on project home](https://gitlab.com/munadi/munadi/-/work_items) with `munadi.log`. Explain as detail as possible with your current app version and relevant details.
 
 ---
 
@@ -169,18 +172,27 @@ If issues persist, [open an issue on project home](https://gitlab.com/munadi/mun
 
 ## AI Contribution Policy
 
-We try to be as clear as possible on AI agent, LLM and bot contributions to the project. AI-assisted contributions by humans are welcome, any other autonomous AI contributions including merge/pull requests, issues & comments will be rejected. This includes any variants of `"Signed-off by <agent's operator>`" i.e. human-operated agentic requests. We encourage both seasoned and new-comer (human) contributors to include `"Assisted by: "` footer whenever presenting any contributions on the project if using any assistances by AIs & LLMs.
+We aim to be transparent about contributions from AI agents, LLMs, and bots. AI-assisted contributions by humans are welcome. Any other autonomous AI contributions — including merge/pull requests, issues, and comments — will be rejected. This includes any "Signed-off-by: `<agent's operator>`" variants, i.e. human-operated agentic submissions. Human contributors are encouraged to include an "Assisted by: " footer in any contribution that involved AI or LLM assistance.
 
 ---
 
 ## License
 
-This project is licensed under the AGPL-3.0-or-later license. Licenses apply to individual tools used in this project. See the [LICENSE](https://gitlab.com/munadi/munadi/-/blob/master/LICENSE) file for details.
+This project is licensed under the AGPL-3.0-or-later license. Licenses apply to individual tools used in this project. See the [LICENSE](https://gitlab.com/munadi/munadi/-/blob/master/LICENSE) file for details, and [Acknowledgements](https://gitlab.com/munadi/munadi/-/blob/master/README.md#acknowledgements) for licenses for used libraries.
+
+---
+
+### Contributors
+
+- **Flathub Maintainer:** Hasan Esa [@HasanEsa](https://github.com/HasanEsa)
+- me00001 [@me00001](https://github.com/me00001)
+- Sabri Ünal [@yakushabb](https://github.com/yakushabb)
+- Timothée Ravier [@travier](https://github.com/travier)
 
 ---
 
 - **Homepage**: [munadi.org](https://munadi.org)
-- **Bug Tracker**: [GitLab Issues](https://gitlab.com/munadi/munadi/-/issues) | [Flathub Issues](https://github.com/flathub/org.munadi.Munadi/issues)
+- **Bug Tracker**: [GitLab Issues](https://gitlab.com/munadi/munadi/-/work_items) | [Flathub Issues](https://github.com/flathub/org.munadi.Munadi/issues)
 - **Source Code**: [Source](https://gitlab.com/munadi/munadi) | [Flathub](https://github.com/flathub/org.munadi.Munadi)
 
 ---
