@@ -5,7 +5,6 @@ sdk: org.kde.Sdk
 command: munadi
 finish-args:
   - --device=dri
-  - --filesystem=xdg-music:ro
   - --filesystem=xdg-run/pipewire-0
   - --share=ipc
   - --share=network
@@ -17,6 +16,8 @@ finish-args:
 cleanup:
   - /include
   - /lib/cmake
+  - /lib/HasanEsa
+  - /lib/qml
   - '*.la'
   - '*.a'
 modules:
@@ -27,5 +28,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/munadi/munadi.git
-        tag: "26.04"
-        commit: d54236a1ae3476a5f448dfe35a182cdf952f65ce
+        tag: "26.06"
+        commit: 288daa1eb859cdfff2a0fea10b9544ef7164a167
+      - type: patch
+        path: disable-fileman-cet.patch
