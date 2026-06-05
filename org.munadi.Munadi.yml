@@ -25,10 +25,10 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
-    patch:
-      - disable-fileman-cet.patch
     sources:
       - type: git
         url: https://gitlab.com/munadi/munadi.git
         tag: "26.06"
         commit: 288daa1eb859cdfff2a0fea10b9544ef7164a167
+      - type: patch
+        path: disable-fileman-cet.patch
