@@ -1,6 +1,6 @@
 app-id: org.munadi.Munadi
 runtime: org.kde.Platform
-runtime-version: "6.10"
+runtime-version: "6.11"
 sdk: org.kde.Sdk
 command: munadi
 finish-args:
@@ -18,17 +18,24 @@ cleanup:
   - /lib/cmake
   - /lib/HasanEsa
   - /lib/qml
-  - '*.la'
-  - '*.a'
+  - "*.la"
+  - "*.a"
 modules:
   - name: munadi
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
+      - -DFETCHCONTENT_SOURCE_DIR_FILEMAN=/run/build/munadi/subprojects/lotconn/fileman
+      - -DFETCHCONTENT_SOURCE_DIR_SINGLEAPPLICATION=/run/build/munadi/subprojects/singleapplication
     sources:
       - type: git
         url: https://gitlab.com/munadi/munadi.git
-        tag: "26.06"
-        commit: 288daa1eb859cdfff2a0fea10b9544ef7164a167
-      - type: patch
-        path: disable-fileman-cet.patch
+        tag: "26.08"
+      - type: git
+        url: https://gitlab.com/lotconn/fileman
+        commit: 6b50c89a03fb051543946bae366900b3e8c1ffc2
+        dest: subprojects/lotconn/fileman
+      - type: git
+        url: https://github.com/itay-grudev/SingleApplication
+        commit: a218603d76a55dddb65b84f2b49ecaa8efc074ea
+        dest: subprojects/singleapplication
