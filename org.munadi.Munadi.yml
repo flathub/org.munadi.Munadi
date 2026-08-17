@@ -30,7 +30,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/munadi/munadi.git
-        tag: "26.08"
+        commit: 4439cc5cc8da244901c270fa7282dc0189699c39
       - type: git
         url: https://gitlab.com/lotconn/fileman
         commit: 6b50c89a03fb051543946bae366900b3e8c1ffc2
