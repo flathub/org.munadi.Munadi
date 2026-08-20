@@ -18,7 +18,7 @@ Munadi is a simple yet powerful Athan app designed to be a companion in your dai
 - Option to assign a unique Athan for each prayer
 - Fine-tune prayer times and Hijri date offsets
 - Support for various global calculation methods
-- Arabic language support
+- Full Arabic & Bangla language support with RTL layout
 
 ---
 
