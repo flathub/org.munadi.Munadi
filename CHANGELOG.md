@@ -2,6 +2,17 @@
 
 All notable changes to this repo will be documented in this file. Does not include [project's changelog](https://gitlab.com/munadi/munadi/-/blob/master/CHANGELOG.md).
 
+---
+
+## [26.08](#munadi-2608) - 2026-08-20
+
+- Update manifest for 26.08 release
+- Adopt to upstream migration to cmake `FetchContent` instead of git submodules
+
+Full Changelog: [`26.06...26.08`](https://github.com/flathub/org.munadi.Munadi/compare/26.06...26.08)
+
+---
+
 ## [26.06](#munadi-2606) - 2026-06-05
 
 - Update manifest for 26.06 release
