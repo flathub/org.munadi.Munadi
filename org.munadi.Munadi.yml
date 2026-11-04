@@ -16,7 +16,8 @@ finish-args:
 cleanup:
   - /include
   - /lib/cmake
-  - /lib/HasanEsa
+  - /lib/Lotconn
+  - /lib/lotconn
   - /lib/qml
   - "*.la"
   - "*.a"
@@ -25,15 +26,21 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
+      - -DFETCHCONTENT_SOURCE_DIR_ADHAN-CPP=/run/build/munadi/subprojects/lotconn/adhan-cpp
       - -DFETCHCONTENT_SOURCE_DIR_FILEMAN=/run/build/munadi/subprojects/lotconn/fileman
       - -DFETCHCONTENT_SOURCE_DIR_SINGLEAPPLICATION=/run/build/munadi/subprojects/singleapplication
+      - -DMUNADI_LINUX_DIST=Flatpak
     sources:
       - type: git
-        url: https://gitlab.com/munadi/munadi.git
-        commit: 4439cc5cc8da244901c270fa7282dc0189699c39
+        url: https://gitlab.com/hasanesa/munadi.git
+        commit: 9e87638508c126dad6a25eb462b6758ecb754a31
+      - type: git
+        url: https://github.com/lotconn/adhan-cpp
+        commit: 545cac6f70a0a60f9d5f521dcbf2dda9eece3d79
+        dest: subprojects/lotconn/adhan-cpp
       - type: git
         url: https://gitlab.com/lotconn/fileman
-        commit: 6b50c89a03fb051543946bae366900b3e8c1ffc2
+        commit: 830b671594be51131a3bc66b85454f7130174d8f
         dest: subprojects/lotconn/fileman
       - type: git
         url: https://github.com/itay-grudev/SingleApplication
