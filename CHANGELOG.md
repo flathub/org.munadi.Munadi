@@ -1,6 +1,19 @@
 # Changelog
 
-All notable changes to this repo will be documented in this file. Does not include [project's changelog](https://gitlab.com/munadi/munadi/-/blob/master/CHANGELOG.md).
+All notable changes to this repo will be documented in this file. Does not include
+[project's changelog](https://gitlab.com/munadi/munadi/-/blob/master/CHANGELOG.md).
+
+---
+
+## [26.11](#munadi-2611) - 2026-11-10
+
+- Update manifest for 26.11 release
+- Add required third-party libraries, update commit hashes of existing ones
+- Add `-DMUNADI_LINUX_DIST=Flatpak` flag explicitly for flatpak building
+- Added auto-formatting config files
+
+Full Changelog:
+[`26.08...26.11`](https://github.com/flathub/org.munadi.Munadi/compare/26.08...26.11)
 
 ---
 
@@ -9,7 +22,8 @@ All notable changes to this repo will be documented in this file. Does not inclu
 - Update manifest for 26.08 release
 - Adopt to upstream migration to cmake `FetchContent` instead of git submodules
 
-Full Changelog: [`26.06...26.08`](https://github.com/flathub/org.munadi.Munadi/compare/26.06...26.08)
+Full Changelog:
+[`26.06...26.08`](https://github.com/flathub/org.munadi.Munadi/compare/26.06...26.08)
 
 ---
 
@@ -18,7 +32,8 @@ Full Changelog: [`26.06...26.08`](https://github.com/flathub/org.munadi.Munadi/c
 - Update manifest for 26.06 release
 - Add some more removables during cleanup
 
-Full Changelog: [`26.04...26.06`](https://github.com/flathub/org.munadi.Munadi/compare/26.04...26.06)
+Full Changelog:
+[`26.04...26.06`](https://github.com/flathub/org.munadi.Munadi/compare/26.04...26.06)
 
 ---
 
@@ -26,7 +41,8 @@ Full Changelog: [`26.04...26.06`](https://github.com/flathub/org.munadi.Munadi/c
 
 - Update manifest for 26.04 release
 
-Full Changelog: [`26.02...26.04`](https://github.com/flathub/org.munadi.Munadi/compare/26.02...26.04)
+Full Changelog:
+[`26.02...26.04`](https://github.com/flathub/org.munadi.Munadi/compare/26.02...26.04)
 
 ---
 
@@ -35,7 +51,8 @@ Full Changelog: [`26.02...26.04`](https://github.com/flathub/org.munadi.Munadi/c
 - Update manifest for 26.02 release
 - Add housekeeping (PR #14 @yakusshab)
 
-Full Changelog: [`25.11...26.02`](https://github.com/flathub/org.munadi.Munadi/compare/25.11...26.02)
+Full Changelog:
+[`25.11...26.02`](https://github.com/flathub/org.munadi.Munadi/compare/25.11...26.02)
 
 ---
 
@@ -43,13 +60,14 @@ Full Changelog: [`25.11...26.02`](https://github.com/flathub/org.munadi.Munadi/c
 
 - Update manifest for 25.11 release
 - Update platform to 6.10
-- Add (read-only) permission for `$XDG_MUSIC` directory since external audio files do not persist after app restart
+- Add (read-only) permission for `$XDG_MUSIC` directory since external audio files do not persist
+  after app restart
 - Migrate to Wayland exclusive
 
-Full Changelog: [`22.04...25.11`](https://github.com/flathub/org.munadi.Munadi/compare/22.04...25.11)
+Full Changelog:
+[`22.04...25.11`](https://github.com/flathub/org.munadi.Munadi/compare/22.04...25.11)
 
-Thanks to other contributors:
-@travier: PR #2
+Thanks to other contributors: @travier: PR #2
 
 ---
 
@@ -57,7 +75,8 @@ Thanks to other contributors:
 
 - Update manifest for 22.04 release
 
-Full Changelog: [`21.12...22.04`](https://github.com/flathub/org.munadi.Munadi/compare/21.12...22.04)
+Full Changelog:
+[`21.12...22.04`](https://github.com/flathub/org.munadi.Munadi/compare/21.12...22.04)
 
 ---
 
@@ -66,7 +85,8 @@ Full Changelog: [`21.12...22.04`](https://github.com/flathub/org.munadi.Munadi/c
 - Update manifest for 21.12 release
 - Fix Tray icon (PR #1 @me000001)
 
-Full Changelog: [`21.04.1...21.12`](https://github.com/flathub/org.munadi.Munadi/compare/21.04.1...21.12)
+Full Changelog:
+[`21.04.1...21.12`](https://github.com/flathub/org.munadi.Munadi/compare/21.04.1...21.12)
 
 ---
 
@@ -74,7 +94,8 @@ Full Changelog: [`21.04.1...21.12`](https://github.com/flathub/org.munadi.Munadi
 
 - Update manifest for 21.04.1 release
 
-Full Changelog: [`21.04...21.04.1`](https://github.com/flathub/org.munadi.Munadi/compare/21.04...21.04.1)
+Full Changelog:
+[`21.04...21.04.1`](https://github.com/flathub/org.munadi.Munadi/compare/21.04...21.04.1)
 
 ---
 
@@ -82,7 +103,8 @@ Full Changelog: [`21.04...21.04.1`](https://github.com/flathub/org.munadi.Munadi
 
 - Update manifest for 21.04 release
 
-Full Changelog: [`21.02...21.04`](https://github.com/flathub/org.munadi.Munadi/compare/21.02...21.04)
+Full Changelog:
+[`21.02...21.04`](https://github.com/flathub/org.munadi.Munadi/compare/21.02...21.04)
 
 ---
 
@@ -90,7 +112,8 @@ Full Changelog: [`21.02...21.04`](https://github.com/flathub/org.munadi.Munadi/c
 
 - Update manifest for 21.02 release
 
-Full Changelog: [`20.09.1...21.02`](https://github.com/flathub/org.munadi.Munadi/compare/20.09.1...21.02)
+Full Changelog:
+[`20.09.1...21.02`](https://github.com/flathub/org.munadi.Munadi/compare/20.09.1...21.02)
 
 ---
 
@@ -100,7 +123,8 @@ Full Changelog: [`20.09.1...21.02`](https://github.com/flathub/org.munadi.Munadi
 - Migrate to cmake-ninja build-system
 - Remove unsupported `subdir`
 
-Full Changelog: [`20.09...20.09.1`](https://github.com/flathub/org.munadi.Munadi/compare/20.09...20.09.1)
+Full Changelog:
+[`20.09...20.09.1`](https://github.com/flathub/org.munadi.Munadi/compare/20.09...20.09.1)
 
 ---
 
@@ -109,7 +133,8 @@ Full Changelog: [`20.09...20.09.1`](https://github.com/flathub/org.munadi.Munadi
 - Update manifest for 20.09 release
 - Update runtime to 5.15
 
-Full Changelog: [`20.07...20.09`](https://github.com/flathub/org.munadi.Munadi/compare/20.07...20.09)
+Full Changelog:
+[`20.07...20.09`](https://github.com/flathub/org.munadi.Munadi/compare/20.07...20.09)
 
 ---
 
@@ -118,7 +143,8 @@ Full Changelog: [`20.07...20.09`](https://github.com/flathub/org.munadi.Munadi/c
 - Update manifest for 20.07 release
 - Update runtime to 5.14
 
-Full Changelog: [`19.12...20.07`](https://github.com/flathub/org.munadi.Munadi/compare/19.12...20.07)
+Full Changelog:
+[`19.12...20.07`](https://github.com/flathub/org.munadi.Munadi/compare/19.12...20.07)
 
 ---
 
@@ -126,7 +152,8 @@ Full Changelog: [`19.12...20.07`](https://github.com/flathub/org.munadi.Munadi/c
 
 - Update manifest for 19.12 release
 
-Full Changelog: [`19.11...19.12`](https://github.com/flathub/org.munadi.Munadi/compare/19.11...19.12)
+Full Changelog:
+[`19.11...19.12`](https://github.com/flathub/org.munadi.Munadi/compare/19.11...19.12)
 
 ---
 
@@ -135,7 +162,8 @@ Full Changelog: [`19.11...19.12`](https://github.com/flathub/org.munadi.Munadi/c
 - Update manifest for 19.11 release
 - Update platform to 5.13
 
-Full Changelog: [`19.04...19.11`](https://github.com/flathub/org.munadi.Munadi/compare/19.04...19.11)
+Full Changelog:
+[`19.04...19.11`](https://github.com/flathub/org.munadi.Munadi/compare/19.04...19.11)
 
 ---
 
@@ -145,9 +173,11 @@ Full Changelog: [`19.04...19.11`](https://github.com/flathub/org.munadi.Munadi/c
 - Update platform to 5.12
 - Omit `branch`
 - Migrate to qmake build-system preset
-- Use XDG resources on the project tree instead (handled by the build-system preset), do not include those anymore
+- Use XDG resources on the project tree instead (handled by the build-system preset), do not include
+  those anymore
 
-Full Changelog: [`17.02...19.04`](https://github.com/flathub/org.munadi.Munadi/compare/17.02...19.04)
+Full Changelog:
+[`17.02...19.04`](https://github.com/flathub/org.munadi.Munadi/compare/17.02...19.04)
 
 ---
 
@@ -159,7 +189,6 @@ Tree at this commit: [`17.02`](https://github.com/flathub/org.munadi.Munadi/tree
 
 ---
 
-
 ## Get in Touch
 
 Visit [our homepage](https://munadi.org)
@@ -168,4 +197,4 @@ Project home: [Gitlab](https://gitlab.com/munadi/munadi)
 
 ---
 
-*See [full commit history](https://github.com/flathub/org.munadi.Munadi/commits/master/).*
+_See [full commit history](https://github.com/flathub/org.munadi.Munadi/commits/master/)._
