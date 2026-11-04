@@ -157,7 +157,9 @@ with `munadi.log`. Explain as detail as possible with your current app version a
   flatpak run --command=flatpak-builder-lint org.flatpak.Builder manifest /path/to/your/manifest
   ```
 
-  > [!NOTE] Make sure your manifest uses the
+  > [!NOTE]
+  >
+  > Make sure your manifest uses the
   > [latest tagged commit of the project](https://gitlab.com/munadi/munadi/-/tags) as the source. Do
   > not use other commits as those are not guaranteed to be stable.
 
@@ -198,8 +200,9 @@ assistance.
 
 ## License
 
-This project is licensed under the AGPL-3.0-or-later license. Licenses apply to individual tools used in this project. See the
-[LICENSE](https://gitlab.com/munadi/munadi/-/blob/master/LICENSE) file for details, and
+This project is licensed under the AGPL-3.0-or-later license. Licenses apply to individual tools
+used in this project. See the [LICENSE](https://gitlab.com/munadi/munadi/-/blob/master/LICENSE) file
+for details, and
 [Acknowledgements](https://gitlab.com/munadi/munadi/-/blob/master/README.md#acknowledgements) for
 licenses for used libraries.
 
