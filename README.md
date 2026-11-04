@@ -158,7 +158,6 @@ with `munadi.log`. Explain as detail as possible with your current app version a
   ```
 
   > [!NOTE]
-  >
   > Make sure your manifest uses the
   > [latest tagged commit of the project](https://gitlab.com/munadi/munadi/-/tags) as the source. Do
   > not use other commits as those are not guaranteed to be stable.
