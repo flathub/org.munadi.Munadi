@@ -16,7 +16,6 @@ finish-args:
 cleanup:
   - /include
   - /lib/cmake
-  - /lib/HasanEsa
   - /lib/qml
   - "*.la"
   - "*.a"
@@ -25,17 +24,8 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
-      - -DFETCHCONTENT_SOURCE_DIR_FILEMAN=/run/build/munadi/subprojects/lotconn/fileman
-      - -DFETCHCONTENT_SOURCE_DIR_SINGLEAPPLICATION=/run/build/munadi/subprojects/singleapplication
     sources:
       - type: git
         url: https://gitlab.com/munadi/munadi.git
-        commit: 4439cc5cc8da244901c270fa7282dc0189699c39
-      - type: git
-        url: https://gitlab.com/lotconn/fileman
-        commit: 6b50c89a03fb051543946bae366900b3e8c1ffc2
-        dest: subprojects/lotconn/fileman
-      - type: git
-        url: https://github.com/itay-grudev/SingleApplication
-        commit: a218603d76a55dddb65b84f2b49ecaa8efc074ea
-        dest: subprojects/singleapplication
+        commit: 7aefd6efcfb0060dacd28b20599df6f12589c0d7
+        tag: 26.11
